@@ -1,0 +1,62 @@
+Install the latest version of the Raspbian OS from the Raspberry pi Imager Program.
+
+Enable VNC in Raspbery Pi
+	sudo raspi-config
+	-> Interfacing Options -> VNC -> Enable VNC 
+
+Enable I2C in Raspberry Pi
+	sudo raspi-config
+	-> Interfacing Options -> I2C -> Enable I2C
+	List I2C Devices Connected
+	i2cdetect -y 1
+
+Python Libraries Installation
+	1) PyQt5 Installation
+		sudo apt-get install python-pyqt5
+	2) QrCode Installation
+		pip3 install qrcode
+	3) SQLite Installation
+		sudo apt-get install sqlite3	
+	4) Sound Device Installation
+		pip3 install sounddevice
+		Install PortAudio library 
+		sudo apt-get install libportaudio2
+	5) Sound File Installation 
+		pip3 install SoundFile
+	6) Python MLX90614
+		pip3 install PyMLX90614
+
+Python Codes for Sensors
+	1) PyMAX30102: for recording the Heart Beat and O2
+		git clone https://github.com/doug-burrell/max30102.git
+
+	2) PyMLX90614: for recording temperature
+		Install library for recording temperature
+		pip3 install PyMLX90614
+		
+		Get Code Files
+		wget https://files.pythonhosted.org/packages/38/69/567b638368878c415623eb0a95048ae0319192fb974bb97c9d08dcee8d23/PyMLX90614-0.0.4.tar.gz
+		
+		Unzip File
+		tar -xf PyMLX90614-0.0.3.tar.gz
+		
+		Remove Zip File
+		rm -rf PyMLX90614-0.0.3.tar.gz
+	
+		Get Python SetUp Tools
+		sudo apt-get install python-setuptools
+		
+		Get I2C Setup tools
+		sudo apt-get install -y i2c-tools
+
+
+For Java installation
+
+	
+		
+		
+		
+		
+
+		
+	
